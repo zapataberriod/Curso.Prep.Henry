@@ -1,7 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevastring = daniel;
+const nuevastring = 'daniel';
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 12;
@@ -220,7 +220,6 @@ function areaDelTriangulo(base, altura){
  return (base * altura)/2; 
 }
 
-
 function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
@@ -236,7 +235,7 @@ function esVocal(letra){
   if (letra.length > 1){
     return "dato incorrecto"
   }
-  if(letra === "a" ||letra === "e" || letra === "i" || letra === "o" || lerta === "u"){
+  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
     return "es vocal"
   }
   return "dato incorrecto"
@@ -247,7 +246,7 @@ function esVocal(letra){
 // --------------------------------
 
 module.exports = {
-  nuevaString,
+  nuevastring,
   nuevoNum,
   nuevoBool,
   nuevaResta,
