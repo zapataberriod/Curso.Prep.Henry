@@ -22,7 +22,7 @@ function agregarPropiedad(objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
-  objeto [property] = ull;
+  objeto [property] = null;
   return objeto;
 }
 
@@ -50,7 +50,7 @@ function eliminarPropiedad(objeto, unaPropiedad) {
   // Elimina la propiedad de objeto cuyo nombre está pasado por el parametro unaPropiedad 
   // Devuelve el objeto
   // Tu código:
-delete objeto[propiedad];
+delete objeto['propiedad'];
 
 return objeto;
 }
