@@ -1,9 +1,13 @@
 // Do not change any of the function names
 
-function mayúscula(nombre) {
+function mayuscula(nombre) {
   //La función recibe un nombre y debe devolver el mismo que recibe pero con su primer letra en mayúscula
   //ej: Recibe "mario" ----> Devuelve "Mario"
-  return nombre[0].toUpperCase() + nombre.slice(1);
+
+  var letra=nombre [0].toUpperCase()
+  nombre=nombre.slice(1)
+  return (letra + nombre);
+
 }
 
 function invocarCallback(cb) {
@@ -23,19 +27,13 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   // Primera opcion
-  // var numeros = [1,2,3,4,5]
-  // var suma = 0;
-  // for(var i = 0; i< numeros.length; i++) {
-    // suma = suma + numeros[i];
-  // }
-  // cb(suma);
+ var suma = 0
+ for (let i = 0; i < numeros.length; i++) {
+   suma = suma + numeros[i];
+ }
 
-  // Segunda opcion
-  var sumaTotal = numeros.reduce(function(acc, curr) {
-    return acc + curr;
-  },0);
-  cb(sumaTotal);
-}
+ cb(suma)
+  }
 
 function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
@@ -82,7 +80,7 @@ function filter(array) {
 // --------------------------------
 
 module.exports = {
-  mayúscula,
+  mayuscula,
   invocarCallback,
   operacionMatematica,
   sumarArray, 

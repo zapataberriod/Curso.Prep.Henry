@@ -239,7 +239,7 @@ function esVocal(letra){
     return "es vocal"
   }
   return "dato incorrecto"
-
+console.log(letra)
 }
 
 // No modificar nada debajo de esta línea
