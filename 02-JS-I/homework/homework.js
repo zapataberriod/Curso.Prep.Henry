@@ -1,7 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevastring = 'daniel';
+const nuevaString = "Daniel";
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 12;
@@ -169,14 +169,12 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if(numero === 0) {
-    return false;
-  }
-  else if (numero > 0){
-    return "es positivo";
-  }
-  else{
-    return "es negativo";
+  if (numero > 0) {
+    return "Es positivo"
+  } else if (numero < 0) {
+    return "Es negativo"
+  } else {
+    return false
   }
 }
 
@@ -199,7 +197,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'hola' + nombre + '!';
+  return "Hola " + nombre + "!"
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -233,20 +231,20 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   //Escribe tu código aquí
   if (letra.length > 1){
-    return "dato incorrecto"
+    return "Dato incorrecto"
   }
-  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
-    return "es vocal"
+  if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
+    return "Es vocal"
   }
-  return "dato incorrecto"
-console.log(letra)
+  return "Dato incorrecto"
+
 }
 
 // No modificar nada debajo de esta línea
 // --------------------------------
 
 module.exports = {
-  nuevastring,
+  nuevaString,
   nuevoNum,
   nuevoBool,
   nuevaResta,

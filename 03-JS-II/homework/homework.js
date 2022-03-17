@@ -16,10 +16,10 @@ function mayoriaDeEdad(edad) {
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
   if (edad >=18) {
-    return "allowed"
+    return "Allowed"
   }
   else{
-    return "not allowed"
+    return "Not allowed"
   }
 }
   
@@ -30,13 +30,13 @@ function conection(status) {
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
   if(status === 1) {
-    return "online"; 
+    return "Online"; 
   }
   else if(status === 2) {
-    return "away";
+    return "Away";
   }
   else {
-    return "offline"
+    return "Offline"
   }
 }
 
@@ -48,13 +48,13 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
   if (idioma === 'aleman'){
-    return 'guten tag!';
+    return 'Guten Tag!';
   } else if (idioma === 'mandarin'){
-    return 'ni hao!';
+    return 'Ni Hao!';
   } else if (idioma === 'ingles') {
-    return 'hello';
+    return 'Hello!';
 } else {
-  return 'hola';
+  return 'Hola!';
 }
 }
 
@@ -67,16 +67,16 @@ function colors(color) {
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
   switch(color) {
-    case "bule":
-return "this is blue"; 
+    case "blue":
+return "This is blue"; 
 case "red":
-  return "this is red";
+  return "This is red";
   case "green":
-    return "this is green";
+    return "This is green";
     case "orange":
-      return "this is orange";
+      return "This is orange";
       default:
-        return "color not found";
+        return "Color not found";
   }
 }
 
@@ -123,14 +123,15 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
+  // 5 8 10
   if(num1 < 0 || num2 < 0 || num3 < 0 ) {
-    return "hay negativos";
+    return "Hay negativos";
   }
   else if(num1 === 0 || num2 === 0 || num3 === 0){
-    return "error";
+    return "Error";
   }
-  else if(num3 > num1 && num3 > num2 && num1 > num3) {
-    return "numero 1 es mayor y positivo";
+  else if(num1 > 0 && num1 > num2 && num1 > num3) {
+    return "Número 1 es mayor y positivo";
   }
   else if(num3 > num1 && num3 > num2) {
     return num3 + 1;
@@ -162,9 +163,9 @@ function esVerdadero(valor){
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
 if(valor === true){
-  return "soy verdadero"
+  return "Soy verdadero"
 }
-return "soy falso"
+return "Soy falso"
 }
 
 function tablaDelSeis(){
