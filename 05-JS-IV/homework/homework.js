@@ -10,7 +10,7 @@ function crearGato(nombre, edad) {
     nombre: nombre,
     edad: edad,
     meow: function() {
-      return 'meow!';
+      return 'Meow!';
     }
   };
   return obj;
@@ -48,11 +48,11 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
 
 function eliminarPropiedad(objeto, unaPropiedad) {
   // Elimina la propiedad de objeto cuyo nombre está pasado por el parametro unaPropiedad 
+  // tip : tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
-delete objeto['propiedad'];
-
-return objeto;
+delete objeto [unaPropiedad];
+return objeto
 }
 
 function nuevoUsuario(nombre, email, password) {
