@@ -104,7 +104,7 @@ function numeroMasGrande(numeros) {
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
-  // Si no se pasan argumentos devuelve 0. 
+  // Si no se pasan argumentos devuelve 0. 
 // Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   if(arguments.length < 1) return 0;
@@ -130,12 +130,13 @@ return contador
 function diaDeLaSemana(numeroDeDia) {
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
-  //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
+  //si el día corresponde a Sábado o Domingo y “Es día Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  if(numeroDeDia === 1 || numeroDeDia === 7 ){
-    return "es fin de semana"
-  }
-  return "es dia laboral"
+ if (numeroDeDia === 1 || numeroDeDia === 7) {
+   return "Es fin de semana";
+ } else {
+   return "Es día Laboral";
+ }
 } 
 
 function empiezaConNueve(n) {
@@ -211,7 +212,7 @@ function breakStatement(numero) {
     }
   }
   if(i < 10) {
-    return 'se interrumpió la ejecución';
+    return 'Se interrumpió la ejecución';
   }
   else {
     return array;
